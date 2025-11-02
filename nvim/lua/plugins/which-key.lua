@@ -1,6 +1,10 @@
 return {
   "folke/which-key.nvim",
   event = "VeryLazy",
+  dependencies = {
+    "nvim-tree/nvim-web-devicons",
+    "nvim-mini/mini.icons",
+  },
   opts = {},
   keys = {
     {
