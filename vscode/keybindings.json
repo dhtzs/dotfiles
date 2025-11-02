@@ -1,0 +1,10 @@
+[
+	{
+		"key": "numpad0",
+		"command": "editor.action.indentationToTabs"
+	},
+	{
+		"key": "insert",
+		"command": "workbench.action.terminal.clear"
+	}
+]

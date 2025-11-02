@@ -1,0 +1,17 @@
+{
+	"servers": {
+		"github": {
+			"type": "http",
+			"url": "https://api.githubcopilot.com/mcp/"
+		},
+		"cloudflare": {
+			"type": "http",
+			"url": "https://docs.mcp.cloudflare.com/sse"
+		},
+		"burpsuite": {
+			"type": "http",
+			"url": "http://127.0.0.1:9876/sse"
+		}
+	},
+	"inputs": []
+}
