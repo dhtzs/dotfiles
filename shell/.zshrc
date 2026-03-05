@@ -5,6 +5,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Fix font rendering issue
+#export GSK_RENDERER=cairo
+#export GALLIUM_DRIVER=d3d12
+
 # Configure oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
 
@@ -60,12 +64,8 @@ export PATH=$HOME/.juliaup/bin:$PATH
 
 export PATH=/mnt/c/Program\ Files/Microsoft\ VS\ Code/bin:$PATH
 
-# Configure GPG
-#export GPG_TTY
-#precmd_functions+=(_set_gpg_tty)
-#function _set_gpg_tty() {
-#  GPG_TTY=$(tty)
-#}
+# Configure zsh-autocomplete
+zstyle ':autocomplete:*' add-semicolon no
 
 # Configure bat
 export BAT_THEME="Dracula"
