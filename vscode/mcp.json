@@ -1,9 +1,5 @@
 {
 	"servers": {
-		"github": {
-			"type": "http",
-			"url": "https://api.githubcopilot.com/mcp/"
-		},
 		"cloudflare": {
 			"type": "http",
 			"url": "https://docs.mcp.cloudflare.com/sse"
